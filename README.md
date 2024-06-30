@@ -96,11 +96,11 @@ cd CodeGenFlask
 mkdir ./env && cd ./env
 python3.10 -m venv ./env/py3-10_env
 ```
-(3) Download the test model from huggingface or [here](https://github.com/d0v0e/CodeGenFlask/releases), and unzip it to the CodeGenFlask `CodeGenFlask/model/` folder.
+(3) Download the test model from huggingface or [here](https://github.com/d0v0e/CodeGenFlask/releases), and unzip it to the CodeGenFlask `CodeGenFlask/models/` folder.
 ```bash
 wget https://github.com/d0v0e/CodeGenFlask/releases/download/v0.1.0/codegen-350M-mono.tar.gz
 tar -xzvf codegen-350M-mono.tar.gz
-mv codegen-350M-mono ~/CodeGenFlask/model/
+mv codegen-350M-mono ~/CodeGenFlask/models/
 ```
 (4) Activate the env, install and test the requirements using `set_up.sh`.
 ```bash

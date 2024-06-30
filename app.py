@@ -5,9 +5,7 @@ import time
 
 app = Flask(__name__)
 
-model_path_350M = "/mnt/e/CodeGenModel/codegen-350M-mono"
-
-model_path_2B = "/mnt/e/CodeGenModel/models--Salesforce--codegen-2B-mono/snapshots"
+model_path_350M = "./models/codegen-350M-mono"
 
 model_path = model_path_350M
 model_name = "codegen-350M-mono"
