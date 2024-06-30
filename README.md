@@ -3,11 +3,11 @@ CodeGen´óÓïÑÔÄ£ĞÍÊÇÓÉSalesforce¿ª·¢µÄÒ»¿îÇ¿´óµÄ×Ô¶¯»¯´úÂëÉú³É¹¤¾ß¡£ËüÖ¼ÔÚÍ¨¹ı½«Ô
 
 ±¾ÏîÄ¿ÊÇ»ùÓÚCodeGen´óÓïÑÔÄ£ĞÍµÄÒ»¸öFlask°æ±¾£¬Ê¹ÓÃPython¼òÒ×¿ª·¢Ìá¹©¿ÉÊÓ»¯web·şÎñ¡£Ïà½ÏÔ­ÏîÄ¿Ìá¹©ÁË¿ÉÊÓ»¯Æ½Ì¨ºÍ¸ü¼ÓÏêÏ¸µÄ½Ì³Ì¡£
 
----
-
 CodeGen Large Language Model is a powerful automated code generation tool developed by Salesforce. It is designed to help developers efficiently build and manage applications based on Apex (Salesforce's customized programming language) by transforming metadata into readable, maintainable source code, Original project: [CodeGen](https://github.com/salesforce/CodeGen)
 
 This project is based on CodeGen large language model of a Flask version, using Python simple development to provide visualization web services. Compared with the original project, it provides a visualization platform and more detailed tutorials.
+
+---
 
 ## Model Architecture
 CodeGenÊ¹ÓÃ×Ô»Ø¹éĞÎÊ½µÄtransformerÔÚ×ÔÈ»ÓïÑÔºÍ±à³ÌÓïÑÔÊı¾İ¼¯ÉÏ½øĞĞÑµÁ·¡£Ä£ĞÍ³ß´ç°üÀ¨£º350M¡¢2.7B¡¢6.1BºÍ16.1B¡£
@@ -22,8 +22,6 @@ THEPILEÊÇÒ»¸öÓÃÓÚÓïÑÔ½¨Ä£µÄ825.18GBÓ¢ÎÄÊı¾İ¼¯¡£¸ÃÊı¾İ¼¯ÊÇ»ùÓÚ22¸ö¸ßÖÊÁ¿×Ó¼¯¹¹Ôìµ
 
 releases²¿·ÖÌá¹©ÁË350MµÄmomoÄ£ĞÍ¹©»·¾³²âÊÔ£¬ÆäËûÄ£ĞÍ¿ÉÒÔÔÚ[huggingface¹ÙÍø](https://huggingface.co/models?search=salesforce+codegenl)½øĞĞÏÂÔØ¡£
 
----
-
 CodeGen is trained on natural language and programming language datasets using an autoregressive form of transformer. Model sizes include: 350M, 2.7B, 6.1B, and 16.1B.
 
 CodeGen model families are trained sequentially on three datasets: THEPILE, BIGQUERY and BIGPYTHON.
@@ -36,10 +34,12 @@ The monolingual dataset BIGPYTHON contains a large amount of data for python. Th
 
 The releases section provides a 350M momo model for environmental testing, and other models can be downloaded at [huggingface official website](https://huggingface.co/models?search=salesforce+codegenl).
 
+---
+
 ## Quick Start
 After setup the environment, run the CodeGenFlask server using `start.sh`.
 ```bash
-Usage: ./start.sh [-h <host>] [-p <port>]
+Usage: ./start.sh -h [host] -p [port]
 Example:
 ./start.sh  # default host: 0.0.0.0, port: 5000
 ./start.sh -p 8000
@@ -66,6 +66,8 @@ The history will be saved at end.
 ![alt text](images/image-2.png)
 
 You can change the model by editing the model path in `app.py`.
+
+---
 
 ## Environment Setup 
 (1) Download Python 3.10 from [here](https://www.python.org/downloads/) and install it. Or you can install it using wget and compile it yourself.
