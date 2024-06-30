@@ -26,7 +26,7 @@ else:
     device_name = torch.device('cpu')
 
 start_load_time = time.time()
-#model = AutoModelForCausalLM.from_pretrained(model_path, trust_remote_code=True).to(device)  # 将模型移到指定设备上
+model = AutoModelForCausalLM.from_pretrained(model_path, trust_remote_code=True).to(device)  # 将模型移到指定设备上
 
 end_load_time = time.time()
 load_duration = end_load_time - start_load_time
@@ -78,4 +78,4 @@ def generate():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True)
