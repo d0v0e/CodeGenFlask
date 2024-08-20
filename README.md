@@ -1,26 +1,26 @@
 ## Introduction
-CodeGen´óÓïÑÔÄ£ĞÍÊÇÓÉSalesforce¿ª·¢µÄÒ»¿îÇ¿´óµÄ×Ô¶¯»¯´úÂëÉú³É¹¤¾ß¡£ËüÖ¼ÔÚÍ¨¹ı½«ÔªÊı¾İ×ª»¯Îª¿É¶Á¡¢¿ÉÎ¬»¤µÄÔ´´úÂë£¬°ïÖú¿ª·¢Õß¸ßĞ§µØ¹¹½¨ºÍ¹ÜÀí»ùÓÚApex£¨SalesforceµÄ¶¨ÖÆ±à³ÌÓïÑÔ£©µÄÓ¦ÓÃ³ÌĞò£¬Ô­ÏîÄ¿£º[CodeGen](https://github.com/salesforce/CodeGen)
+CodeGenå¤§è¯­è¨€æ¨¡å‹æ˜¯ç”±Salesforceå¼€å‘çš„ä¸€æ¬¾å¼ºå¤§çš„è‡ªåŠ¨åŒ–ä»£ç ç”Ÿæˆå·¥å…·ã€‚å®ƒæ—¨åœ¨é€šè¿‡å°†å…ƒæ•°æ®è½¬åŒ–ä¸ºå¯è¯»ã€å¯ç»´æŠ¤çš„æºä»£ç ï¼Œå¸®åŠ©å¼€å‘è€…é«˜æ•ˆåœ°æ„å»ºå’Œç®¡ç†åŸºäºApexï¼ˆSalesforceçš„å®šåˆ¶ç¼–ç¨‹è¯­è¨€ï¼‰çš„åº”ç”¨ç¨‹åºã€‚
 
-±¾ÏîÄ¿ÊÇ»ùÓÚCodeGen´óÓïÑÔÄ£ĞÍµÄÒ»¸öFlask°æ±¾£¬Ê¹ÓÃPython¼òÒ×¿ª·¢Ìá¹©¿ÉÊÓ»¯web·şÎñ¡£Ïà½ÏÔ­ÏîÄ¿Ìá¹©ÁË¿ÉÊÓ»¯Æ½Ì¨ºÍ¸ü¼ÓÏêÏ¸µÄ½Ì³Ì¡£
+æœ¬é¡¹ç›®æ˜¯åŸºäºCodeGenå¤§è¯­è¨€æ¨¡å‹çš„ä¸€ä¸ªFlaskç‰ˆæœ¬ï¼Œä½¿ç”¨Pythonç®€æ˜“å¼€å‘æä¾›å¯è§†åŒ–webæœåŠ¡ï¼Œæä¾›äº†å¯è§†åŒ–å¹³å°å’Œæ›´åŠ è¯¦ç»†çš„æ•™ç¨‹ã€‚
 
-CodeGen Large Language Model is a powerful automated code generation tool developed by Salesforce. It is designed to help developers efficiently build and manage applications based on Apex (Salesforce's customized programming language) by transforming metadata into readable, maintainable source code, Original project: [CodeGen](https://github.com/salesforce/CodeGen)
+CodeGen Large Language Model is a powerful automated code generation tool developed by Salesforce. It is designed to help developers efficiently build and manage applications based on Apex (Salesforce's customized programming language) by transforming metadata into readable, maintainable source code.
 
-This project is based on CodeGen large language model of a Flask version, using Python simple development to provide visualization web services. Compared with the original project, it provides a visualization platform and more detailed tutorials.
+This project is based on CodeGen large language model of a Flask version, using Python simple development to provide visualization web services. It provides a visualization platform and more detailed tutorials.
 
 ---
 
 ## Model Architecture
-CodeGenÊ¹ÓÃ×Ô»Ø¹éĞÎÊ½µÄtransformerÔÚ×ÔÈ»ÓïÑÔºÍ±à³ÌÓïÑÔÊı¾İ¼¯ÉÏ½øĞĞÑµÁ·¡£Ä£ĞÍ³ß´ç°üÀ¨£º350M¡¢2.7B¡¢6.1BºÍ16.1B¡£
+CodeGenä½¿ç”¨è‡ªå›å½’å½¢å¼çš„transformeråœ¨è‡ªç„¶è¯­è¨€å’Œç¼–ç¨‹è¯­è¨€æ•°æ®é›†ä¸Šè¿›è¡Œè®­ç»ƒã€‚æ¨¡å‹å°ºå¯¸åŒ…æ‹¬ï¼š350Mã€2.7Bã€6.1Bå’Œ16.1Bã€‚
 
-CodeGenÄ£ĞÍ×å»áÔÚÈı¸öÊı¾İ¼¯ÉÏË³ĞòÑµÁ·£ºTHEPILE¡¢BIGQUERYºÍBIGPYTHON¡£
+CodeGenæ¨¡å‹æ—ä¼šåœ¨ä¸‰ä¸ªæ•°æ®é›†ä¸Šé¡ºåºè®­ç»ƒï¼šTHEPILEã€BIGQUERYå’ŒBIGPYTHONã€‚
 
-THEPILEÊÇÒ»¸öÓÃÓÚÓïÑÔ½¨Ä£µÄ825.18GBÓ¢ÎÄÊı¾İ¼¯¡£¸ÃÊı¾İ¼¯ÊÇ»ùÓÚ22¸ö¸ßÖÊÁ¿×Ó¼¯¹¹ÔìµÄ£¬ÆäÖĞÒ»¸öÊÇ´ÓGitHubÉÏÊÕ¼¯µÄ±à³ÌÓïÑÔÊı¾İ£¬Õ¼Õû¸öÊı¾İ¼¯µÄ7.6%¡£»ùÓÚ¸ÃÊı¾İ¼¯ÑµÁ·µÄÄ£ĞÍ³ÆÎª×ÔÈ»ÓïÑÔCodeGenÄ£ĞÍ(CodeGen-NL)¡£
+THEPILEæ˜¯ä¸€ä¸ªç”¨äºè¯­è¨€å»ºæ¨¡çš„825.18GBè‹±æ–‡æ•°æ®é›†ã€‚è¯¥æ•°æ®é›†æ˜¯åŸºäº22ä¸ªé«˜è´¨é‡å­é›†æ„é€ çš„ï¼Œå…¶ä¸­ä¸€ä¸ªæ˜¯ä»GitHubä¸Šæ”¶é›†çš„ç¼–ç¨‹è¯­è¨€æ•°æ®ï¼Œå æ•´ä¸ªæ•°æ®é›†çš„7.6%ã€‚åŸºäºè¯¥æ•°æ®é›†è®­ç»ƒçš„æ¨¡å‹ç§°ä¸ºè‡ªç„¶è¯­è¨€CodeGenæ¨¡å‹(CodeGen-NL)ã€‚
 
-¶àÓïÑÔÊı¾İ¼¯BIGQUERYÊÇGoogle¹«¿ªÊı¾İ¼¯BigQueryµÄ×Ó¼¯£¬ÆäÊÇÓÉ¶àÖÖ±à³ÌÓïÑÔ¹¹³ÉµÄ¡£Ñ¡Ôñ6ÖÖ±à³ÌÓïÑÔC¡¢C++¡¢Go¡¢Java¡¢JavaScriptºÍPython½øĞĞ¶àÓïÑÔÑµÁ·¡£³ÆÔÚBIGQUERYÉÏÑµÁ·µÄÄ£ĞÍÎª¶àÓïÑÔCodeGenÄ£ĞÍ(CodeGen-Multi)¡£
+å¤šè¯­è¨€æ•°æ®é›†BIGQUERYæ˜¯Googleå…¬å¼€æ•°æ®é›†BigQueryçš„å­é›†ï¼Œå…¶æ˜¯ç”±å¤šç§ç¼–ç¨‹è¯­è¨€æ„æˆçš„ã€‚é€‰æ‹©6ç§ç¼–ç¨‹è¯­è¨€Cã€C++ã€Goã€Javaã€JavaScriptå’ŒPythonè¿›è¡Œå¤šè¯­è¨€è®­ç»ƒã€‚ç§°åœ¨BIGQUERYä¸Šè®­ç»ƒçš„æ¨¡å‹ä¸ºå¤šè¯­è¨€CodeGenæ¨¡å‹(CodeGen-Multi)ã€‚
 
-µ¥ÓïÑÔÊı¾İ¼¯BIGPYTHON°üº¬ÁË´óÁ¿pythonµÄÊı¾İ¡£¸ÃÊı¾İ¼¯ÖĞ°üº¬ÁËÖÁ2021Äê10ÔÂµÄ¹«¿ª¡¢¿É»ñÈ¡ÇÒ·Ç¸öÈËµÄpython´úÂë¡£³ÆÔÚBIGPYTHONÉÏÑµÁ·µÄÄ£ĞÍÎªµ¥ÓïÑÔCodeGenÄ£ĞÍ(CodeGen-Mono)¡£
+å•è¯­è¨€æ•°æ®é›†BIGPYTHONåŒ…å«äº†å¤§é‡pythonçš„æ•°æ®ã€‚è¯¥æ•°æ®é›†ä¸­åŒ…å«äº†è‡³2021å¹´10æœˆçš„å…¬å¼€ã€å¯è·å–ä¸”éä¸ªäººçš„pythonä»£ç ã€‚ç§°åœ¨BIGPYTHONä¸Šè®­ç»ƒçš„æ¨¡å‹ä¸ºå•è¯­è¨€CodeGenæ¨¡å‹(CodeGen-Mono)ã€‚
 
-releases²¿·ÖÌá¹©ÁË350MµÄmomoÄ£ĞÍ¹©»·¾³²âÊÔ£¬ÆäËûÄ£ĞÍ¿ÉÒÔÔÚ[huggingface¹ÙÍø](https://huggingface.co/models?search=salesforce+codegenl)½øĞĞÏÂÔØ¡£
+releaseséƒ¨åˆ†æä¾›äº†350Mçš„momoæ¨¡å‹ä¾›ç¯å¢ƒæµ‹è¯•ï¼Œå…¶ä»–æ¨¡å‹å¯ä»¥åœ¨[huggingfaceå®˜ç½‘](https://huggingface.co/models?search=salesforce+codegenl)è¿›è¡Œä¸‹è½½ã€‚
 
 CodeGen is trained on natural language and programming language datasets using an autoregressive form of transformer. Model sizes include: 350M, 2.7B, 6.1B, and 16.1B.
 
@@ -54,9 +54,9 @@ import smtplib
 from email.mime.text import MIMEText
 from email.utils import formataddr
  
-sender='abc@163.com'    # ·¢¼şÈËÓÊÏäÕËºÅ
-passtoken = 'PASSWORD'              # ·¢¼şÈËÓÊÏäÃÜÂë
-receiver='123@qq.com'      # ÊÕ¼şÈËÓÊÏäÕËºÅ
+sender='abc@163.com'    # å‘ä»¶äººé‚®ç®±è´¦å·
+passtoken = 'PASSWORD'              # å‘ä»¶äººé‚®ç®±å¯†ç 
+receiver='123@qq.com'      # æ”¶ä»¶äººé‚®ç®±è´¦å·
 def mail():
 ```
 After generating the code, the result will show in the web page below.
